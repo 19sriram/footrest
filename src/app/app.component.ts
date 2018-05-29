@@ -6,11 +6,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public nameString: string; 
   public splittednameString: string;
   public splitter : Array<string>=[]; 
-  public a : Array<number>= [1,2,3,4,7]; 
-  public b : Array<number>= [1,4,3,5]; 
+  public name: string;
+  public a : Array<string>= ['a','b','c']; 
+  public b : Array<string>= ['a','ZU','MI']; 
+  public iEle:number;
   title = 'app';
   convertName(nameInput) {
     
@@ -18,7 +19,20 @@ export class AppComponent {
     // //console.log(this.nameString);
     // let splittednameString = Array.from(this.nameString);
     
-    //  console.log(this.a.filter(x=> this.b.indexOf(x)<0));
+     //console.log(this.a.filter(x=> this.b.indexOf(x)<0));
+    // this.a.forEach(function(value){
+    //   if(this.a.value==this.b.forEach(function(value)){});  
+    // });
+    this.name="sriram";
+    let splittednameString = Array.from(this.name);
+    console.log('Name-->'+splittednameString);
+    splittednameString.forEach(function(holder){
+      console.log(holder);
+      
+    })
 
+
+     console.log(this.a.indexOf('a'));
+    }
   }
-}
+

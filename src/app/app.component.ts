@@ -6,33 +6,27 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public splittednameString: string;
-  public splitter : Array<string>=[]; 
+  public splittednameString: string; 
   public name: string;
-  public a : Array<string>= ['a','b','c']; 
-  public b : Array<string>= ['a','ZU','MI']; 
-  public iEle:number;
   title = 'app';
+ 
   convertName(nameInput) {
-    
-    // this.nameString = nameInput.value;
-    // //console.log(this.nameString);
-    // let splittednameString = Array.from(this.nameString);
-    
-     //console.log(this.a.filter(x=> this.b.indexOf(x)<0));
-    // this.a.forEach(function(value){
-    //   if(this.a.value==this.b.forEach(function(value)){});  
-    // });
+    let a= ['a','b','c','d','e','f','g','h','i','j','k','l','m','n','o','p','q','r','s','t','u','v','w','x','y',
+    'z']; 
+    let b= ['KA','ZU','MI','TE','KU','LU','JI','RI','KI','ZU','ME','TA','RIN','TO','MO','NO',
+      'KE','SHI','ARI','CHI','DO','RU','MEI','NA','FU','Z'];
+    let finalName=[];
+    let japaneseName='';
     this.name="sriram";
     let splittednameString = Array.from(this.name);
     console.log('Name-->'+splittednameString);
     splittednameString.forEach(function(holder){
-      console.log(holder);
-      
+      console.log(holder+"==>"+b[a.indexOf(holder)]);
+      finalName.push(b[a.indexOf(holder)]);
+      japaneseName=finalName.join("");
+      return this.japaneseName;
     })
-
-
-     console.log(this.a.indexOf('a'));
+    
     }
   }
 

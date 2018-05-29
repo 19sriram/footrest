@@ -17,16 +17,18 @@ export class AppComponent {
       'KE','SHI','ARI','CHI','DO','RU','MEI','NA','FU','Z'];
     let finalName=[];
    let japaneseName='';
-    this.name="sriram";
+    this.name=nameInput;
     let splittednameString = Array.from(this.name);
-    console.log('Name-->'+splittednameString);
+    //console.log('Name-->'+splittednameString);
     splittednameString.forEach(function(holder){
-      console.log(holder+"==>"+b[a.indexOf(holder)]);
+      //console.log(holder+"==>"+b[a.indexOf(holder)]);
       finalName.push(b[a.indexOf(holder)]);
-      return japaneseName=finalName.join("");
-      
+       return japaneseName=finalName.join("");
+      console.log(japaneseName);
     })
-    
+    return japaneseName;
+    console.log(japaneseName);
     }
+
   }
 

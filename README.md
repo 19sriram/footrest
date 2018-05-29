@@ -1,4 +1,4 @@
-# nGuploader
-A new way for people to share their images and retreive them on time basis is nGuploader. It uses the power of angular 5 and mysql. 
+# JapanoFun
+App to convert your normal boring name into japanese alphabet name. Something funny though..
 ## Demo App
-The demo app has simple login form with password sent to their registered email address or via sms and logged in successfully
+STarted on 30/05/2018 12:56 AM

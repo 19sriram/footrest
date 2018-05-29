@@ -16,15 +16,15 @@ export class AppComponent {
     let b= ['KA','ZU','MI','TE','KU','LU','JI','RI','KI','ZU','ME','TA','RIN','TO','MO','NO',
       'KE','SHI','ARI','CHI','DO','RU','MEI','NA','FU','Z'];
     let finalName=[];
-    let japaneseName='';
+   let japaneseName='';
     this.name="sriram";
     let splittednameString = Array.from(this.name);
     console.log('Name-->'+splittednameString);
     splittednameString.forEach(function(holder){
       console.log(holder+"==>"+b[a.indexOf(holder)]);
       finalName.push(b[a.indexOf(holder)]);
-      japaneseName=finalName.join("");
-      return this.japaneseName;
+      return japaneseName=finalName.join("");
+      
     })
     
     }
